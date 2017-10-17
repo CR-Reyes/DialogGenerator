@@ -1,0 +1,87 @@
+[
+    {
+        "id": "bin-0+cif_sig",
+        "received_id": "def-cif_sig",
+        "intent": "binario",
+        "entities": [
+            "0",
+            "cifra significativa"
+        ],
+        "template": "¿los [Entity] son [Entity]?",
+        "message": "¿los cero son digitos significativos?",
+        "success": false,
+        "received_intents": [
+            {
+                "intent": "definicion",
+                "confidence": 0.30895426869392395
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "operacion",
+                "location": [
+                    14,
+                    36
+                ],
+                "value": "cifra significativa",
+                "confidence": 1
+            },
+            {
+                "entity": "numero",
+                "location": [
+                    5,
+                    9
+                ],
+                "value": "0",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-neg+pro_pun",
+        "received_id": "bin-esca+pro_pun",
+        "intent": "binario",
+        "entities": [
+            "negativo",
+            "producto punto"
+        ],
+        "template": "puede ser [Entity] el [Entity]?",
+        "message": "puede ser negativa el producto escalar?",
+        "success": false,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.9703875780105591
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "operacion",
+                "location": [
+                    22,
+                    38
+                ],
+                "value": "producto punto",
+                "confidence": 1
+            },
+            {
+                "entity": "valor",
+                "location": [
+                    10,
+                    18
+                ],
+                "value": "negativo",
+                "confidence": 1
+            },
+            {
+                "entity": "cantidad",
+                "location": [
+                    31,
+                    38
+                ],
+                "value": "escalar",
+                "confidence": 1
+            }
+        ]
+    }
+]

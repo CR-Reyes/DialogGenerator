@@ -1,0 +1,415 @@
+[
+    {
+        "id": "agr",
+        "received_id": "agr",
+        "intent": "agradecimiento",
+        "entities": [],
+        "template": "no gracias",
+        "message": "no gracias",
+        "success": true,
+        "received_intents": [
+            {
+                "intent": "agradecimiento",
+                "confidence": 1
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "comparacion",
+                "location": [
+                    0,
+                    2
+                ],
+                "value": "no",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-0+cif_sig",
+        "received_id": "def-cif_sig",
+        "intent": "binario",
+        "entities": [
+            "0",
+            "cifra significativa"
+        ],
+        "template": "¿los [Entity] son [Entity]?",
+        "message": "¿los cero son digitos significativos?",
+        "success": false,
+        "received_intents": [
+            {
+                "intent": "definicion",
+                "confidence": 0.30895426869392395
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "operacion",
+                "location": [
+                    14,
+                    36
+                ],
+                "value": "cifra significativa",
+                "confidence": 1
+            },
+            {
+                "entity": "numero",
+                "location": [
+                    5,
+                    9
+                ],
+                "value": "0",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-despla+neg",
+        "received_id": "bin-despla+neg",
+        "intent": "binario",
+        "entities": [
+            "desplazamiento",
+            "negativo"
+        ],
+        "template": "¿los [Entity] son [Entity]?",
+        "message": "¿los desplazamiento son negativas?",
+        "success": true,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.6698510050773621
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "cantidad-fisica",
+                "location": [
+                    5,
+                    19
+                ],
+                "value": "desplazamiento",
+                "confidence": 1
+            },
+            {
+                "entity": "valor",
+                "location": [
+                    24,
+                    33
+                ],
+                "value": "negativo",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-esca+pro_cru",
+        "received_id": "bin-esca+pro_cru",
+        "intent": "binario",
+        "entities": [
+            "escalar",
+            "producto cruz"
+        ],
+        "template": "puede ser [Entity] un [Entity]?",
+        "message": "puede ser magnitud escalar un producto cruz?",
+        "success": true,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.6598935127258301
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "cantidad",
+                "location": [
+                    10,
+                    26
+                ],
+                "value": "escalar",
+                "confidence": 1
+            },
+            {
+                "entity": "operacion",
+                "location": [
+                    30,
+                    43
+                ],
+                "value": "producto cruz",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-pro_cru+vec",
+        "received_id": "bin-pro_cru+vec",
+        "intent": "binario",
+        "entities": [
+            "producto cruz",
+            "vector"
+        ],
+        "template": "¿los [Entity] son [Entity]?",
+        "message": "¿los producto cruz son vectorial?",
+        "success": true,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.334629625082016
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "operacion",
+                "location": [
+                    5,
+                    18
+                ],
+                "value": "producto cruz",
+                "confidence": 1
+            },
+            {
+                "entity": "vector",
+                "location": [
+                    23,
+                    32
+                ],
+                "value": "vector",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-neg+pro_cru",
+        "received_id": "bin-neg+pro_cru",
+        "intent": "binario",
+        "entities": [
+            "negativo",
+            "producto cruz"
+        ],
+        "template": "puede ser [Entity] un [Entity]?",
+        "message": "puede ser negativos un producto cruz?",
+        "success": true,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.8641102313995361
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "operacion",
+                "location": [
+                    23,
+                    36
+                ],
+                "value": "producto cruz",
+                "confidence": 1
+            },
+            {
+                "entity": "valor",
+                "location": [
+                    10,
+                    19
+                ],
+                "value": "negativo",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-esca+pro_pun",
+        "received_id": "bin-esca+pro_pun",
+        "intent": "binario",
+        "entities": [
+            "escalar",
+            "producto punto"
+        ],
+        "template": "puede ser [Entity] un [Entity]?",
+        "message": "puede ser escalar un producto punto?",
+        "success": true,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.8522546291351318
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "operacion",
+                "location": [
+                    21,
+                    35
+                ],
+                "value": "producto punto",
+                "confidence": 1
+            },
+            {
+                "entity": "cantidad",
+                "location": [
+                    10,
+                    17
+                ],
+                "value": "escalar",
+                "confidence": 1
+            },
+            {
+                "entity": "objeto",
+                "location": [
+                    30,
+                    35
+                ],
+                "value": "particula",
+                "confidence": 1
+            },
+            {
+                "entity": "representacion",
+                "location": [
+                    30,
+                    35
+                ],
+                "value": "punto",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-pro_pun+vec",
+        "received_id": "bin-pro_pun+vec",
+        "intent": "binario",
+        "entities": [
+            "producto punto",
+            "vector"
+        ],
+        "template": "puede ser [Entity] el [Entity]?",
+        "message": "puede ser producto punto el vectores?",
+        "success": true,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.7931971549987793
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "operacion",
+                "location": [
+                    10,
+                    24
+                ],
+                "value": "producto punto",
+                "confidence": 1
+            },
+            {
+                "entity": "objeto",
+                "location": [
+                    19,
+                    24
+                ],
+                "value": "particula",
+                "confidence": 1
+            },
+            {
+                "entity": "representacion",
+                "location": [
+                    19,
+                    24
+                ],
+                "value": "punto",
+                "confidence": 1
+            },
+            {
+                "entity": "vector",
+                "location": [
+                    28,
+                    36
+                ],
+                "value": "vector",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-neg+pro_pun",
+        "received_id": "bin-esca+pro_pun",
+        "intent": "binario",
+        "entities": [
+            "negativo",
+            "producto punto"
+        ],
+        "template": "puede ser [Entity] el [Entity]?",
+        "message": "puede ser negativa el producto escalar?",
+        "success": false,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.9703875780105591
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "operacion",
+                "location": [
+                    22,
+                    38
+                ],
+                "value": "producto punto",
+                "confidence": 1
+            },
+            {
+                "entity": "valor",
+                "location": [
+                    10,
+                    18
+                ],
+                "value": "negativo",
+                "confidence": 1
+            },
+            {
+                "entity": "cantidad",
+                "location": [
+                    31,
+                    38
+                ],
+                "value": "escalar",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "id": "bin-neg+tie",
+        "received_id": "bin-neg+tie",
+        "intent": "binario",
+        "entities": [
+            "negativo",
+            "tiempo"
+        ],
+        "template": "hay [Entity] [Entity]?",
+        "message": "hay negativas tiempo?",
+        "success": true,
+        "received_intents": [
+            {
+                "intent": "binario",
+                "confidence": 0.3471427741526263
+            }
+        ],
+        "received_entities": [
+            {
+                "entity": "valor",
+                "location": [
+                    4,
+                    13
+                ],
+                "value": "negativo",
+                "confidence": 1
+            },
+            {
+                "entity": "cantidad-fisica",
+                "location": [
+                    14,
+                    20
+                ],
+                "value": "tiempo",
+                "confidence": 1
+            }
+        ]
+    }
+]
